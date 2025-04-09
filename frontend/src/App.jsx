@@ -1,12 +1,13 @@
 // App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home";
-import JobListings from "./components/JobListings";
-import Training from "./components/Training";
-import Plans from "./components/Plans";
-import Blog from "./components/Blog";
-import About from "./components/About";
+import Home from './Home';
+import About from './About';
+import Blog from './Blog';
+import JobListings from './JobListings';
+import Training from './Training';
+import Plans from './Plans';
+
 
 export default function App() {
   return (
