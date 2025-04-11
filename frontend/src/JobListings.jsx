@@ -1,11 +1,15 @@
-// components/JobListings.jsx
-import React from "react";
+import React from 'react';
 
-export default function JobListings() {
+const JobListings = () => {
   return (
-    <div className="text-white p-10">
-      <h2 className="text-3xl font-bold">Job Listings</h2>
-      <p className="mt-4">Explore the latest job opportunities tailored for you.</p>
+    <div className="page-container">
+      <h1 className="page-title">Job Listings</h1>
+      <div className="page-content">
+        <p>Explore our latest job opportunities across various industries.</p>
+        {/* Add job listings content here */}
+      </div>
     </div>
   );
-}
+};
+
+export default JobListings;

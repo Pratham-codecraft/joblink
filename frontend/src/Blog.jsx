@@ -1,11 +1,15 @@
-// components/Blog.jsx
-import React from "react";
+import React from 'react';
 
-export default function Blog() {
+const Blog = () => {
   return (
-    <div className="text-white p-10">
-      <h2 className="text-3xl font-bold">Blog</h2>
-      <p className="mt-4">Read the latest updates, tips, and career advice.</p>
+    <div className="page-container">
+      <h1 className="page-title">Blog</h1>
+      <div className="page-content">
+        <p>Stay updated with the latest industry insights, trends, and career advice.</p>
+        {/* Add blog content here */}
+      </div>
     </div>
   );
-}
+};
+
+export default Blog;

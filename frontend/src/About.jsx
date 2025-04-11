@@ -1,11 +1,15 @@
-// components/About.jsx
-import React from "react";
+import React from 'react';
 
-export default function About() {
+const About = () => {
   return (
-    <div className="text-white p-10">
-      <h2 className="text-3xl font-bold">About Us</h2>
-      <p className="mt-4">We are committed to connecting you with better career opportunities.</p>
+    <div className="page-container">
+      <h1 className="page-title">About</h1>
+      <div className="page-content">
+        <p>Learn more about Joblink, our mission, vision, and the team behind our success.</p>
+        {/* Add about content here */}
+      </div>
     </div>
   );
-}
+};
+
+export default About;
