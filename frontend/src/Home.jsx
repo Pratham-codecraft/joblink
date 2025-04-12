@@ -7,6 +7,9 @@ const Home = () => {
   const handleDiscoverClick = () => {
     navigate('/training-courses');
   };
+  const handleEventDetailsClick = (eventId) => {
+    navigate(`/event/${eventId}`);
+  };
 
   return (
     <>
@@ -185,7 +188,7 @@ const Home = () => {
       </div>
 
       {/* Updated "Learn & Level Up" section */}
-      <div className="level-up-section">
+      <div className="level-up-section" id="level-up-section2">
         <div className="level-up-container">
           <div className="level-up-image-container">
             
@@ -206,6 +209,176 @@ const Home = () => {
             <button className="explore-courses-btn" onClick={() => navigate('/training-courses')}>
               Explore Courses <span>→</span>
             </button>
+          </div>
+        </div>
+      </div>
+      <div className="featured-opportunities-section">
+        <div className="featured-opportunities-header">
+          <h2>Featured Opportunities</h2>
+          <p>Check out the curated opportunities handpicked for you from top organizations</p>
+        </div>
+        
+        <div className="opportunities-grid">
+          {/* Career Development Workshop */}
+          <div className="opportunity-card">
+            <div className="opportunity-image-container">
+              <img 
+                src="https://static.wixstatic.com/media/6aa0b2_23205382252c43eca084c99e90e76b9f~mv2.png/v1/fill/w_335,h_188,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/6aa0b2_23205382252c43eca084c99e90e76b9f~mv2.png" 
+                alt="Career Development Workshop" 
+                className="opportunity-image"
+              />
+            </div>
+            <div className="opportunity-info">
+              <h3>Career Development Workshop</h3>
+              <p className="opportunity-date">Aug 31, 2025, 9:54 PM – 11:54 PM</p>
+              <p className="opportunity-location">Global Career Hub</p>
+              <p className="opportunity-more" onClick={() => handleEventDetailsClick('career-development-workshop')}>More info</p>
+              <button className="details-btn" onClick={() => handleEventDetailsClick('career-development-workshop')}>Details</button>
+            </div>
+          </div>
+          
+          {/* Vocational Training Expo */}
+          <div className="opportunity-card">
+            <div className="opportunity-image-container">
+              <img 
+                src="https://static.wixstatic.com/media/6aa0b2_1f2be97d97a940c396e7e73bd8f903aa~mv2.png/v1/fill/w_335,h_188,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/6aa0b2_1f2be97d97a940c396e7e73bd8f903aa~mv2.png" 
+                alt="Vocational Training Expo" 
+                className="opportunity-image"
+              />
+            </div>
+            <div className="opportunity-info">
+              <h3>Vocational Training Expo</h3>
+              <p className="opportunity-date">Aug 31, 2025, 9:54 PM – 11:54 PM</p>
+              <p className="opportunity-location">Career Development Institute</p>
+              <p className="opportunity-more" onClick={() => handleEventDetailsClick('vocational-training-expo')}>More info</p>
+              <button className="details-btn" onClick={() => handleEventDetailsClick('vocational-training-expo')}>Details</button>
+            </div>
+          </div>
+          
+          {/* Career Exploration Conference */}
+          <div className="opportunity-card">
+            <div className="opportunity-image-container">
+              <img 
+                src="https://static.wixstatic.com/media/6aa0b2_d2468043cd904bc49f495df14a146a8b~mv2.png/v1/fill/w_335,h_188,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/6aa0b2_d2468043cd904bc49f495df14a146a8b~mv2.png" 
+                alt="Career Exploration Conference" 
+                className="opportunity-image"
+              />
+            </div>
+            <div className="opportunity-info">
+              <h3>Career Exploration Conference</h3>
+              <p className="opportunity-date">Aug 31, 2025, 9:53 PM – 11:53 PM</p>
+              <p className="opportunity-location">Global Career Hub, Main St, Nashua, NH, USA</p>
+              <p className="opportunity-more" onClick={() => handleEventDetailsClick('career-exploration-conference')}>More info</p>
+              <button className="details-btn" onClick={() => handleEventDetailsClick('career-exploration-conference')}>Details</button>
+            </div>
+          </div>
+          
+          {/* Job Search Strategies */}
+          <div className="opportunity-card">
+            <div className="opportunity-image-container">
+              <img 
+                src="https://static.wixstatic.com/media/6aa0b2_a533dfd2952f41d4bf780aea2881a93b~mv2.png/v1/fill/w_335,h_188,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/6aa0b2_a533dfd2952f41d4bf780aea2881a93b~mv2.png" 
+                alt="Job Search Strategies" 
+                className="opportunity-image"
+              />
+            </div>
+            <div className="opportunity-info">
+              <h3>Job Search Strategies</h3>
+              <p className="opportunity-date">Sep 10, 2025, 1:00 PM – 3:00 PM</p>
+              <p className="opportunity-location">Virtual Event</p>
+              <p className="opportunity-more" onClick={() => handleEventDetailsClick('job-search-strategies')}>More info</p>
+              <button className="details-btn" onClick={() => handleEventDetailsClick('job-search-strategies')}>Details</button>
+            </div>
+          </div>
+          
+          {/* Tech Networking Event */}
+          <div className="opportunity-card">
+            <div className="opportunity-image-container">
+              <img 
+                src="https://static.wixstatic.com/media/6aa0b2_18c7374accc54e74a3fee08713986c61~mv2.png/v1/fill/w_335,h_188,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/6aa0b2_18c7374accc54e74a3fee08713986c61~mv2.png" 
+                alt="Tech Networking Event" 
+                className="opportunity-image"
+              />
+            </div>
+            <div className="opportunity-info">
+              <h3>Tech Networking Event</h3>
+              <p className="opportunity-date">Sep 15, 2025, 6:00 PM – 9:00 PM</p>
+              <p className="opportunity-location">Innovation Hub, Boston</p>
+              <p className="opportunity-more" onClick={() => handleEventDetailsClick('tech-networking-event')}>More info</p>
+              <button className="details-btn" onClick={() => handleEventDetailsClick('tech-networking-event')}>Details</button>
+            </div>
+          </div>
+          
+          {/* Resume Building Workshop */}
+          <div className="opportunity-card">
+            <div className="opportunity-image-container">
+              <img 
+                src="https://static.wixstatic.com/media/6aa0b2_b06b3bc459f34992a5605cf8197fbcc4~mv2.png/v1/fill/w_335,h_188,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/6aa0b2_b06b3bc459f34992a5605cf8197fbcc4~mv2.png" 
+                alt="Resume Building Workshop" 
+                className="opportunity-image"
+              />
+            </div>
+            <div className="opportunity-info">
+              <h3>Resume Building Workshop</h3>
+              <p className="opportunity-date">Sep 20, 2025, 10:00 AM – 12:00 PM</p>
+              <p className="opportunity-location">Career Center</p>
+              <p className="opportunity-more" onClick={() => handleEventDetailsClick('resume-building-workshop')}>More info</p>
+              <button className="details-btn" onClick={() => handleEventDetailsClick('resume-building-workshop')}>Details</button>
+            </div>
+          </div>
+          
+          {/* FAME 4.0 */}
+          <div className="opportunity-card">
+            <div className="opportunity-image-container">
+              <img 
+                src="https://static.wixstatic.com/media/6aa0b2_4d09f4b1e0e34014aa98cc9f1ef95f63~mv2.webp/v1/fill/w_335,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6aa0b2_4d09f4b1e0e34014aa98cc9f1ef95f63~mv2.webp" 
+                alt="Leadership Seminar" 
+                className="opportunity-image"
+              />
+            </div>
+            <div className="opportunity-info">
+              <h3>FAME 4.0</h3>
+              <p className="opportunity-date">Sep 25, 2025, 2:00 PM – 5:00 PM</p>
+              <p className="opportunity-location">Pune, AXIS BANK, SERVANTS OF INDIAN SOCIETY EDUCATIONAL INSTITUTION, Shivajinagar, Pune, Maharashtra 411004, India</p>
+              <p className="opportunity-more" onClick={() => handleEventDetailsClick('fame-4')}>More info</p>
+              <button className="details-btn" onClick={() => handleEventDetailsClick('fame-4')}>Details</button>
+            </div>
+          </div>
+          
+          {/* Flipkart Grid 6.0 */}
+          <div className="opportunity-card">
+            <div className="opportunity-image-container">
+              <img 
+                src="https://static.wixstatic.com/media/6aa0b2_73787546d15a4b27877c6495569d32ab~mv2.webp/v1/fill/w_335,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6aa0b2_73787546d15a4b27877c6495569d32ab~mv2.webp" 
+                alt="Entrepreneurship Workshop" 
+                className="opportunity-image"
+              />
+            </div>
+            <div className="opportunity-info">
+              <h3>Flipkart Grid 6.0</h3>
+              <p className="opportunity-date">Oct 5, 2025, 9:00 AM – 4:00 PM</p>
+              <p className="opportunity-location">Coding Test</p>
+              <p className="opportunity-more" onClick={() => handleEventDetailsClick('flipkart-grid-6')}>More info</p>
+              <button className="details-btn" onClick={() => handleEventDetailsClick('flipkart-grid-6')}>Details</button>
+            </div>
+          </div>
+          
+          {/* Ace Case Competitions */}
+          <div className="opportunity-card">
+            <div className="opportunity-image-container">
+              <img 
+                src="https://static.wixstatic.com/media/6aa0b2_2be2283765c045f1b8128bea3b9a461e~mv2.webp/v1/fill/w_335,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6aa0b2_2be2283765c045f1b8128bea3b9a461e~mv2.webp" 
+                alt="Industry Insights Panel" 
+                className="opportunity-image"
+              />
+            </div>
+            <div className="opportunity-info">
+              <h3>Ace Case Competitions</h3>
+              <p className="opportunity-date">Oct 12, 2025, 11:00 AM – 1:00 PM</p>
+              <p className="opportunity-location">Webinar</p>
+              <p className="opportunity-more" onClick={() => handleEventDetailsClick('ace-case-competitions')}>More info</p>
+              <button className="details-btn" onClick={() => handleEventDetailsClick('ace-case-competitions')}>Details</button>
+            </div>
           </div>
         </div>
       </div>

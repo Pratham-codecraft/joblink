@@ -7,6 +7,7 @@ import TrainingCourses from './TrainingCourses.jsx';
 import PlansPricing from './PlansPricing.jsx';
 import Blog from './Blog.jsx';
 import About from './About.jsx';
+import EventDetail from './EventDetail.jsx';
 import './index.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/plans-pricing" element={<PlansPricing />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
+          <Route path="/event/:eventId" element={<EventDetail />} />
         </Routes>
       </div>
     </Router>

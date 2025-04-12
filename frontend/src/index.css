@@ -632,3 +632,294 @@
       scale: 0.8;
     }
   }
+  /* Featured Opportunities Section */
+.featured-opportunities-section {
+  padding: 4rem 2rem;
+  background-color: #000;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.featured-opportunities-header {
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-opportunities-header h2 {
+  font-size: 3.3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.featured-opportunities-header p {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 800px;
+}
+
+.opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.opportunity-card {
+  background-color: #000;
+  border: 1px solid rgb(73, 73, 73);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.opportunity-image-container {
+  width: 100%;
+  height: 188px;
+  overflow: hidden;
+}
+
+.opportunity-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.opportunity-card:hover .opportunity-image {
+  transform: scale(1.05);
+}
+
+.opportunity-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #000;
+}
+
+.opportunity-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #fff;
+  text-align: center;
+}
+
+.opportunity-date, .opportunity-location {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.opportunity-more {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.opportunity-more:hover {
+  color: #0ff;
+  text-decoration: underline;
+}
+
+.details-btn {
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: auto;
+  align-self: center;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #00cccc;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 992px) {
+  .opportunities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 576px) {
+  .opportunities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .featured-opportunities-header h2 {
+    font-size: 2.5rem;
+  }
+}
+/* Event Detail Page Styles */
+.event-detail-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+  min-height: calc(100vh - 70px);
+  background-color: #001a1a;
+}
+
+.event-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.event-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-date-location {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.event-image-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.event-detail-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.event-info-box {
+  background-color: #001a1a;
+  padding: 1.5rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.event-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.event-description::after{
+  content: 'Registration is closed';
+  font-size: 1.2rem;
+  /* margin-top: 35px; */
+  display: block;
+  color: cyan;
+}
+
+.registration-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-closed {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.see-other-events {
+  color: #0ff;
+  text-decoration: underline;
+}
+
+.register-btn {
+  display: none;
+  background-color: #0ff;
+  color: #000;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #00cccc;
+}
+
+.event-details-section, .event-about-section {
+  margin-bottom: 2rem;
+}
+
+.event-details-section h2, .event-about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.event-time, .event-location {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.back-to-events {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.back-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #0ff;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0ff;
+  color: #000;
+}
+
+.event-not-found {
+  text-align: center;
+  padding: 3rem;
+}
+
+@media (min-width: 768px) {
+  .event-content {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .event-image-container {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .event-info-box {
+    flex: 1;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .registration-status {
+    align-items: flex-start;
+  }
+}
