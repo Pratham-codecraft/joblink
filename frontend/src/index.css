@@ -1412,3 +1412,242 @@
   }
 }
 
+/* Plans & Pricing Page Styles */
+.plans-pricing-container {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.pricing-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  border: 1px solid #9e9e9e;
+  border-radius: 4px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.plan-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.currency {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.billing-cycle {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #ccc;
+}
+
+.plan-target {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.plan-validity {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.plan-select-btn {
+  background-color: #00e1d9;
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.plan-select-btn:hover {
+  background-color: #00c2bc;
+}
+
+.plan-features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feature {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pricing-heading {
+    font-size: 2.5rem;
+  }
+  
+  .pricing-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+.about-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.about-content h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+  margin-top: 7.7rem;
+}
+
+.about-content h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 2rem;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.about-image {
+  width: 980px;
+  height: 385px;
+  margin: 20px 0;
+}
+.about-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.about-content h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.about-content h2 {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.about-image {
+  width: 980px;
+  height: 385px;
+  margin: 20px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 5rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 431px;
+  height: 431px;
+  /* border-radius: 10px; */
+}
+
+.team-member h3 {
+  font-size: 1.5em;
+  margin: 10px 0 5px;
+}
+
+.team-member .role {
+  color: cyan;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1em;
+  line-height: 1.4;
+  max-width: 90%;
+  margin: 0 auto;
+}
+p.visiontext{
+  margin-bottom: 5rem;
+}
+h2.meet{
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  border-bottom: 3px solid white; /* underline effect */
+  padding-bottom: 6px; /* space between text and line */
+  
+}
