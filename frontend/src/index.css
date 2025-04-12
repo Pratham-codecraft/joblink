@@ -1,3 +1,5 @@
+/* Add Font Awesome for icons if not already included */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 /* Global Styles */
 * {
     margin: 0;
@@ -9,6 +11,7 @@
     font-family: 'Arial', sans-serif;
     background-color: #000;
     color: #fff;
+    /* padding-top: 60px; Adjust this value to match the height of your navbar */
   }
   
   a {
@@ -923,3 +926,489 @@
     align-items: flex-start;
   }
 }
+/* Clients Section Styles */
+.clients-section {
+  padding: 4rem 2rem;
+  background-color: #000;
+  position: relative;
+}
+
+.clients-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.clients-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #fff;
+  flex: 1;
+  line-height: 1.2;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  flex: 2;
+}
+
+.client-logo {
+  background-color: #fff;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 1.5rem; */
+  aspect-ratio: 1/1;
+}
+
+.client-logo img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* Responsive styles for tablets and mobile */
+@media (max-width: 992px) {
+  .clients-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .clients-title {
+    margin-bottom: 2rem;
+  }
+  
+  .clients-grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  
+  .clients-title {
+    font-size: 2.5rem;
+  }
+}
+/* Add these styles to your index.css file */
+
+/* Mentor Support Section Styles */
+.mentor-support-section {
+  padding: 4rem 2rem;
+  background-color: #000;
+  position: relative;
+  margin-bottom: 6.5rem;
+}
+
+.mentor-support-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mentor-support-content {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.mentor-support-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+
+.mentor-support-description {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.mentor-support-buttons {
+  display: flex;
+  /* gap: 48rem; */
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  /* align-items: flex-start; */
+  position: absolute;
+  left: 12%;
+  top: 35%;
+}
+
+.find-mentor-btn {
+  background-color: #104a92;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.find-mentor-btn span {
+  font-size: 1.2rem;
+  transform: rotate(45deg);
+}
+
+.find-mentor-btn:hover {
+  background-color: #0a3063;
+}
+
+.become-mentor-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  left: 210%;
+}
+
+.become-mentor-btn:hover {
+  background-color: cyan;
+  color: #000;
+  border: 0px solid cyan;
+}
+
+.mentor-support-image-container {
+  width: 100%;
+  max-width: 1155px;
+  margin-top: 1rem;
+}
+
+.mentor-support-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .mentor-support-title {
+    font-size: 2.5rem;
+  }
+  
+  .mentor-support-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .find-mentor-btn, .become-mentor-btn {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+}
+/* Our Numbers Section Styles */
+.our-numbers-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  position: relative;
+  width: 100%;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  margin-bottom: 5rem;
+}
+
+.our-numbers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* margin-top: 10rem; */
+  padding: 0 20px;
+  text-align: center;
+}
+
+.our-numbers-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.statistics-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.statistic-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistic-number {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.statistic-label {
+  font-size: 16px;
+  color: #fff;
+}
+
+.highlight-text {
+  color: cyan;
+  font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .statistics-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .our-numbers-title {
+    font-size: 36px;
+  }
+  
+  .statistic-number {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistics-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .our-numbers-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* High z-index ensures navbar stays above other content */
+  background-color: #000000; /* Match your existing navbar background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 0 20px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main-content {
+  min-height: calc(100vh - 430px); /* Adjust based on your navbar and footer height */
+  padding-bottom: 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  line-height: 1.6;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  font-family: 'playfair display', serif;
+}
+
+.footer-description {
+  margin-bottom: 20px;
+  color: #bbbbbb;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #333333;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #007bff;
+  transform: translateY(-3px);
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: cyan;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #bbbbbb;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.newsletter {
+  margin-top: 20px;
+}
+
+.newsletter-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.newsletter-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background-color: #0056b3;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #333333;
+}
+
+.copyright {
+  color: #777777;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  color: #777777;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: cyan;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .main-content {
+    min-height: calc(100vh - 650px); /* Adjust for mobile footer height */
+  }
+}
+

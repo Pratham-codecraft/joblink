@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
 const Home = () => {
   const navigate = useNavigate();
 
@@ -378,6 +377,94 @@ const Home = () => {
               <p className="opportunity-location">Webinar</p>
               <p className="opportunity-more" onClick={() => handleEventDetailsClick('ace-case-competitions')}>More info</p>
               <button className="details-btn" onClick={() => handleEventDetailsClick('ace-case-competitions')}>Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* clients section */}
+      <div className="clients-section">
+        <div className="clients-container">
+          <h2 className="clients-title">Working With the<br />Best Clients and<br />Recruiters.</h2>
+          
+          <div className="clients-grid">
+            <div className="client-logo">
+              <img src="https://static.wixstatic.com/media/6aa0b2_79c225a27b7f4edb80c8a8355c3e54df~mv2.jpg/v1/fill/w_204,h_207,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/google.jpg" alt="Google" />
+            </div>
+            <div className="client-logo">
+              <img src="https://static.wixstatic.com/media/6aa0b2_a9aa9aff93144d8789eaa3628e227d74~mv2.webp/v1/fill/w_204,h_202,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/flipkartphoto.webp" alt="Flipkart" />
+            </div>
+            <div className="client-logo">
+              <img src="https://static.wixstatic.com/media/6aa0b2_dd794bca5fad4596a9973bd5f480e937~mv2.jpg/v1/fill/w_188,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/amazon_edited.jpg" alt="Amazon" />
+            </div>
+            <div className="client-logo">
+              <img src="https://static.wixstatic.com/media/6aa0b2_ba37e856047c450c9039f7619e462928~mv2.jpg/v1/fill/w_204,h_207,al_c,lg_1,q_80,enc_avif,quality_auto/microsoft.jpg" alt="Microsoft" />
+            </div>
+            <div className="client-logo">
+              <img src="https://static.wixstatic.com/media/6aa0b2_16e4a49d71144782a6e1942b52608948~mv2.jpg/v1/fill/w_156,h_156,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/facebook_edited.jpg" alt="Facebook" />
+            </div>
+            <div className="client-logo">
+              <img src="https://static.wixstatic.com/media/6aa0b2_ec9938b4adb34f8ea045950aac51e566~mv2.jpeg/v1/fill/w_204,h_207,al_c,lg_1,q_80,enc_avif,quality_auto/pwc.jpeg" alt="PWC" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Personalized Mentor Support Section */}
+      <div className="mentor-support-section">
+        <div className="mentor-support-container">
+          <div className="mentor-support-content">
+            <h2 className="mentor-support-title">
+              <span className="highlight-text">Personalised</span> Mentor Support
+            </h2>
+            <p className="mentor-support-description">
+              Select a mentor from a pool of 2000+ industry experts & get 1-on-1 mentorship!
+            </p>
+            <div className="mentor-support-buttons">
+              <button className="find-mentor-btn">
+                Find a Mentor
+              </button>
+              <button className="become-mentor-btn">
+                Become a Mentor
+              </button>
+            </div>
+          </div>
+          <div className="mentor-support-image-container">
+            <img 
+              src="https://static.wixstatic.com/media/6aa0b2_2364083c734144fca2ce442079c2401d~mv2.png/v1/fill/w_1155,h_359,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/mentor.png" 
+              alt="Mentorship Program" 
+              className="mentor-support-image"
+            />
+          </div>
+        </div>
+      </div>
+      {/* Our Numbers Section */}
+      <div className="our-numbers-section">
+        <div className="our-numbers-container">
+          <h2 className="our-numbers-title">Our Numbers</h2>
+          <div className="statistics-grid">
+            <div className="statistic-item">
+              <h3 className="statistic-number">5<span className="highlight-text">M</span>+</h3>
+              <p className="statistic-label">Active Users</p>
+            </div>
+            <div className="statistic-item">
+              <h3 className="statistic-number">12.3<span className="highlight-text">M</span>+</h3>
+              <p className="statistic-label">Assessments</p>
+            </div>
+            <div className="statistic-item">
+              <h3 className="statistic-number">130<span className="highlight-text">K</span>+</h3>
+              <p className="statistic-label">Opportunities</p>
+            </div>
+            <div className="statistic-item">
+              <h3 className="statistic-number">800<span className="highlight-text">+</span></h3>
+              <p className="statistic-label">Brands trust us</p>
+            </div>
+            <div className="statistic-item">
+              <h3 className="statistic-number">42<span className="highlight-text">K</span>+</h3>
+              <p className="statistic-label">Organisations</p>
+            </div>
+            <div className="statistic-item">
+              <h3 className="statistic-number">18<span className="highlight-text">+</span></h3>
+              <p className="statistic-label">Countries</p>
             </div>
           </div>
         </div>

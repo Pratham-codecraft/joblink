@@ -8,6 +8,7 @@ import PlansPricing from './PlansPricing.jsx';
 import Blog from './Blog.jsx';
 import About from './About.jsx';
 import EventDetail from './EventDetail.jsx';
+import Footer from './Footer.jsx';
 import './index.css';
 
 function App() {
@@ -15,15 +16,18 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/job-listings" element={<JobListings />} />
-          <Route path="/training-courses" element={<TrainingCourses />} />
-          <Route path="/plans-pricing" element={<PlansPricing />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/event/:eventId" element={<EventDetail />} />
-        </Routes>
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/job-listings" element={<JobListings />} />
+            <Route path="/training-courses" element={<TrainingCourses />} />
+            <Route path="/plans-pricing" element={<PlansPricing />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/event/:eventId" element={<EventDetail />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </Router>
   );
