@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="navbar-left">
         <Link to="/" className="logo">Joblink</Link>
         <div className="nav-links">
-          <Link to="/" className={`nav-link ${isActive('/')}`} style={{color: '#0ff'}}>Home</Link>
+          <Link to="/" className={`nav-link ${isActive('/')}`}>Home</Link>
           <Link to="/job-listings" className={`nav-link ${isActive('/job-listings')}`}>Job listings</Link>
           <Link to="/training-courses" className={`nav-link ${isActive('/training-courses')}`}>Training & Courses</Link>
           <Link to="/plans-pricing" className={`nav-link ${isActive('/plans-pricing')}`}>Plans & Pricing</Link>

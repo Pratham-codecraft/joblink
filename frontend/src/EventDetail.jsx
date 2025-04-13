@@ -29,7 +29,7 @@ const eventsData = {
     location: 'Global Career Hub, Main St, Nashua, NH, USA',
     image: 'https://static.wixstatic.com/media/6aa0b2_d2468043cd904bc49f495df14a146a8b~mv2.png',
     description: 'Explore various career paths and opportunities with industry experts at this comprehensive conference.',
-    isClosed: false
+    isClosed: true
   },
   'job-search-strategies': {
     id: 'job-search-strategies',
@@ -38,7 +38,7 @@ const eventsData = {
     location: 'Virtual Event',
     image: 'https://static.wixstatic.com/media/6aa0b2_a533dfd2952f41d4bf780aea2881a93b~mv2.png',
     description: 'Learn effective job search strategies to enhance your career prospects and find better opportunities.',
-    isClosed: false
+    isClosed: true
   },
   'tech-networking-event': {
     id: 'tech-networking-event',
@@ -47,7 +47,7 @@ const eventsData = {
     location: 'Innovation Hub, Boston',
     image: 'https://static.wixstatic.com/media/6aa0b2_18c7374accc54e74a3fee08713986c61~mv2.png',
     description: 'Connect with tech professionals and companies in a relaxed networking environment.',
-    isClosed: false
+    isClosed: true
   },
   'resume-building-workshop': {
     id: 'resume-building-workshop',
@@ -56,7 +56,7 @@ const eventsData = {
     location: 'Career Center',
     image: 'https://static.wixstatic.com/media/6aa0b2_b06b3bc459f34992a5605cf8197fbcc4~mv2.png',
     description: 'Learn how to create an effective resume that stands out to potential employers.',
-    isClosed: false
+    isClosed: true
   },
   'fame-4': {
     id: 'fame-4',
@@ -65,7 +65,7 @@ const eventsData = {
     location: 'Pune, AXIS BANK, SERVANTS OF INDIAN SOCIETY EDUCATIONAL INSTITUTION, Shivajinagar, Pune, Maharashtra 411004, India',
     image: 'https://static.wixstatic.com/media/6aa0b2_4d09f4b1e0e34014aa98cc9f1ef95f63~mv2.webp',
     description: 'FAME 4.0 is a leadership development program focused on future-ready skills and technologies.',
-    isClosed: false
+    isClosed: true
   },
   'flipkart-grid-6': {
     id: 'flipkart-grid-6',
@@ -74,7 +74,7 @@ const eventsData = {
     location: 'Coding Test',
     image: 'https://static.wixstatic.com/media/6aa0b2_73787546d15a4b27877c6495569d32ab~mv2.webp',
     description: 'Participate in Flipkart\'s flagship engineering campus challenge to showcase your coding skills.',
-    isClosed: false
+    isClosed: true
   },
   'ace-case-competitions': {
     id: 'ace-case-competitions',
@@ -83,7 +83,7 @@ const eventsData = {
     location: 'Webinar',
     image: 'https://static.wixstatic.com/media/6aa0b2_2be2283765c045f1b8128bea3b9a461e~mv2.webp',
     description: 'Learn strategies to excel in case competitions with industry experts.',
-    isClosed: false
+    isClosed: true
   }
 };
 
