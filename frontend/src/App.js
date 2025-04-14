@@ -9,6 +9,8 @@ import Blog from './Blog.jsx';
 import About from './About.jsx';
 import EventDetail from './EventDetail.jsx';
 import Footer from './Footer.jsx';
+import Login from './Login';
+import Register from './Register';
 import './index.css';
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/about" element={<About />} />
             <Route path="/event/:eventId" element={<EventDetail />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
         </main>
         <Footer />
