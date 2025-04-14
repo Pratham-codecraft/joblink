@@ -9,6 +9,12 @@ const Home = () => {
   const handleEventDetailsClick = (eventId) => {
     navigate(`/event/${eventId}`);
   };
+  const handleBecomeMentorClick = () => {
+    navigate('/become-mentor');
+  };
+  const handleFindMentorClick = () => {
+    navigate('/find-mentor');
+  };
 
   return (
     <>
@@ -48,7 +54,7 @@ const Home = () => {
         
         <div className="courses-carousel-container">
           <button className="carousel-btn prev-btn" onClick={() => document.getElementById('courses-carousel').scrollBy({left: -300, behavior: 'smooth'})}>
-            <span>&#10094;</span>
+            <span>❮</span>
           </button>
           
           <div className="courses-carousel" id="courses-carousel">
@@ -68,7 +74,7 @@ const Home = () => {
               <div className="course-image-container">
                 <img src="https://static.wixstatic.com/media/6aa0b2_b57e8641ef254d72bf4c7a38fe6df154~mv2.jpg/v1/fill/w_174,h_174,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6aa0b2_b57e8641ef254d72bf4c7a38fe6df154~mv2.jpg" alt="AI and ML" className="course-image" />
                 <div className="download-icon">
-                  <span>&#8595;</span>
+                  <span>↓</span>
                 </div>
               </div>
               <div className="course-info">
@@ -82,7 +88,7 @@ const Home = () => {
               <div className="course-image-container">
                 <img src="https://static.wixstatic.com/media/6aa0b2_3240f42ed96c40e0b09d36e74f3a268a~mv2.jpg/v1/fill/w_174,h_174,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6aa0b2_3240f42ed96c40e0b09d36e74f3a268a~mv2.jpg" alt="CyberSecurity" className="course-image" />
                 <div className="download-icon">
-                  <span>&#8595;</span>
+                  <span>↓</span>
                 </div>
               </div>
               <div className="course-info">
@@ -181,7 +187,7 @@ const Home = () => {
           </div>
           
           <button className="carousel-btn next-btn" onClick={() => document.getElementById('courses-carousel').scrollBy({left: 300, behavior: 'smooth'})}>
-            <span>&#10095;</span>
+            <span>❯</span>
           </button>
         </div>
       </div>
@@ -420,10 +426,10 @@ const Home = () => {
               Select a mentor from a pool of 2000+ industry experts & get 1-on-1 mentorship!
             </p>
             <div className="mentor-support-buttons">
-              <button className="find-mentor-btn">
+              <button className="find-mentor-btn" onClick={handleFindMentorClick}>
                 Find a Mentor
               </button>
-              <button className="become-mentor-btn">
+              <button className="become-mentor-btn" onClick={handleBecomeMentorClick}>
                 Become a Mentor
               </button>
             </div>

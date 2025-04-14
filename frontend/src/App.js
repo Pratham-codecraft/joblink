@@ -11,6 +11,8 @@ import EventDetail from './EventDetail.jsx';
 import Footer from './Footer.jsx';
 import Login from './Login';
 import Register from './Register';
+import BecomeMentor from './BecomeMentor.jsx';
+import FindMentor from './FindMentor.jsx';
 import './index.css';
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
             <Route path="/event/:eventId" element={<EventDetail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/become-mentor" element={<BecomeMentor />} />
+            <Route path="/find-mentor" element={<FindMentor />} />
           </Routes>
         </main>
         <Footer />

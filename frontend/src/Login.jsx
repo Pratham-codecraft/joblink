@@ -58,7 +58,7 @@ import {
         justifyContent="center"
         alignItems="center"
         height="100vh"
-        bgcolor="#f4f6f8"
+        bgcolor="black"
       >
         <Box width="400px" p={4} bgcolor="white" borderRadius={3} boxShadow={3}>
           {/* Welcome and Sign Up on the same row */}
@@ -69,7 +69,7 @@ import {
             mb={1}
           >
             <Typography variant="h6" fontWeight="bold" color="black">
-              Welcome to <span style={{ color: "#1976d2" }}>CARS360</span>
+              Welcome to <span style={{ color: "#1976d2" }}>JOBLINK</span>
             </Typography>
             <Typography fontSize="14px" color="black">
               No account?{" "}

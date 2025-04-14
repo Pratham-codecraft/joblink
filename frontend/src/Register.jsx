@@ -51,7 +51,7 @@ import {
         justifyContent="center"
         alignItems="center"
         minHeight="100vh"
-        bgcolor="#f4f6f8"
+        bgcolor="black"
       >
         <Box
           width="400px"
