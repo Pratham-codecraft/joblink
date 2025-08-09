@@ -49,7 +49,7 @@ The Joblink project is deployed on Render with a production build optimized for 
 - Live Application: https://joblink-i6in.onrender.com
 
 #### Authors ✍️
-- @Your-Username
+- @Pratham-codecraft
 
 Joblink showcases proficiency in modern front-end development with React, seamless Firebase Authentication, and thoughtful UX for job discovery and learning—ready to evolve with real APIs, Firestore, and admin/content tools.
 
