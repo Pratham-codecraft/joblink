@@ -62,4 +62,3 @@ Joblink showcases proficiency in modern front-end development with React, seamle
 - MUI Icons, react-icons
 - Firebase Authentication (Email/Password, Google)
 - CSS (custom, responsive utilities)
-- Node.js + npm scripts (build/dev)
